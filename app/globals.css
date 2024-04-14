@@ -2,6 +2,9 @@
   @tailwind components;
   @tailwind utilities;
 
+body{
+    /* zoom: 150%; */
+  }
   @layer base {
     :root {
       --background: 0 0% 100%;

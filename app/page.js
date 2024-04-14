@@ -3,6 +3,8 @@ import { client, urlFor } from "./lib/sanity";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+
+export const revalidate = 10
 async function getData() {
   const query = `
   *[_type == 'blog']| order(_createdAt asc){
