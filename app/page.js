@@ -7,7 +7,7 @@ import Link from "next/link";
 export const revalidate = 10
 async function getData() {
   const query = `
-  *[_type == 'blog']| order(_createdAt asc){
+  *[_type == 'blog']| order(_createdAt desc){
     title,
       smallDescription,
       "currentSlug": slug.current,
