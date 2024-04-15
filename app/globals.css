@@ -48,3 +48,12 @@
     --ring: 263.4 70% 50.4%;
   }
 }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
